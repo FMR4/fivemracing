@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- Mirrored from www.invictusrp.it/pages/paginavetrina.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jul 2023 13:09:17 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/paginavetrina.css">
+    <link rel="shortcut icon" href="../assets/logo.gif" type="image/x-icon">
+    <script src="../main.js"></script>
+    <title>Best Photo - FMR4</title>
+</head>
+<body>
+    <div class="container">
+        <div class="background-img"></div>
+        <div class="navbar-main">
+            <div class="flex-container">
+                <div class="flex-items"></div>
+                <i class="fas fa-home"></i><a href="../index.html"><p id="navbar3">Home</p></a>
+                <i class="fas fa-align-center"></i><a href="regolamento.html"><p id="navbar2">Regolamento</p></a>
+                <i class="fas fa-solid fa-camera"></i><a><p id = "navbar1">Galleria Foto</p></a>
+                <i class="fa-sharp fa-light fa-user"></i><a href="classifica.html"><p id="navbar1">Classifica Piloti</p></a>
+                <i class="fab fa-discord"></i><a href="https://discord.gg/q6DTqQmbW8" target="_blank"><p id="navbar4">Discord</p></a>
+            </div>
+        </div>
+        <div class="title-main">
+            <img src="../assets/logo.png" alt="Logo del server" class="logo-img">
+            <h1>Foto Migliori Del Server!</h1>
+            <p>Ecco le migliori foto scattate al interno del nostro server!</p>
+        </div>
+        <div class="gallery-container">
+            <!-- Inserisci le tue foto qui -->
+            <img src="https://i.imgur.com/YgIwkiT_d.webp?maxwidth=760&fidelity=grand">
+            <img src="https://i.imgur.com/JPBXA86_d.webp?maxwidth=760&fidelity=grand" alt="Foto 2">
+            <img src="https://i.imgur.com/Mc9Fcfy_d.webp?maxwidth=760&fidelity=grand">
+            <img src="https://i.imgur.com/htCuVlC_d.webp?maxwidth=760&fidelity=grand">
+            <img src="https://i.imgur.com/Ao4141x_d.webp?maxwidth=760&fidelity=grand">
+            <img src="https://i.imgur.com/zCdRJSZ_d.webp?maxwidth=760&fidelity=grand">
+            
+            <!-- E così via -->
+        </div>
+    </div>
+</body>
+
+<script>
+    // Funzione per aggiungere o rimuovere la classe "active" dal link "Galleria Foto"
+    function setActiveLink() {
+        const galleriaLink = document.getElementById('navbar1');
+        const isGalleryPage = window.location.pathname.includes('paginavetrina.html'); // Assumiamo che la pagina vetrina abbia "paginavetrina.html" nel suo URL
+
+        if (isGalleryPage) {
+            galleriaLink.classList.add('active');
+        } else {
+            galleriaLink.classList.remove('active');
+        }
+    }
+
+    // Esegui la funzione all'avvio della pagina e quando viene effettuato lo scrolling
+    document.addEventListener('DOMContentLoaded', setActiveLink);
+    window.addEventListener('scroll', setActiveLink);
+</script>
+
+
+<!-- Mirrored from www.invictusrp.it/pages/paginavetrina.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jul 2023 13:09:18 GMT -->
+</html>
+

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&amp;family=Roboto+Condensed:wght@700&amp;display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #181818;
+    color: white;
+}
+
+.container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px black;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.flex-container a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.flex-container a:hover {
+    color: #b97837;
+}
+
+
+.title-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh; /* Utilizziamo 100vh per centrare verticalmente */
+}
+
+.logo-img {
+    width: 100px;
+    margin-top: 30px; /* Aggiungiamo un margine superiore per spazio tra il logo e il titolo */
+}
+
+.flex-container #navbar1.active {
+    color: rgb(146, 146, 146); /* Colore grigio per il link attivo */
+}
+
+.title-main h1 {
+    font-size: 36px;
+    margin-top: 20px; /* Riduciamo il margine superiore per spazio tra i titoli */
+}
+
+.title-main p {
+    font-size: 18px;
+    margin-top: 10px; /* Riduciamo ulteriormente il margine superiore per spazio tra i titoli */
+    font-weight: 300;
+}
+
+
+.container {
+    width: 100%;
+    min-height: 100vh; /* Imposta l'altezza minima a 100% della viewport */
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Cambiato da fixed a relative */
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ogni riga con 3 colonne */
+    gap: 20px;
+    justify-items: center;
+    margin: 50px;
+    height: auto; /* Imposta l'altezza automaticamente in base al contenuto delle immagini */
+}
+
+
+.gallery-container img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Abilita lo scroll della pagina per consentire di visualizzare tutte le immagini */
+body {
+    overflow-y: scroll; /* Abilita lo scroll verticale dell'intera pagina */
+}
+
+@media screen and (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

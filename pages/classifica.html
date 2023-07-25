@@ -1,0 +1,372 @@
+<!doctype html>
+<html>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8">
+    <title>Classifica</title>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="robots" content="noindex, nofollow">
+
+    <meta property="og:type" content="website"> 
+    <meta property="og:image" content="http://www.apex-timing.com/gokarts/images/logo_podium.png">
+    <meta property="og:title" content="Mes temps karting">
+    <meta property="og:description" content="Retrouvez tous mes temps sur www.apex-timing.com">
+
+    <link href="https://www.apex-timing.com/gokarts/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="https://www.apex-timing.com/gokarts/media/center328/css/styles_leaderbords.css?06_04_2023__08_50" rel="stylesheet" type="text/css">
+    
+
+
+    <script type="text/javascript" src="https://www.apex-timing.com/gokarts/v4.30/javascript/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="https://www.apex-timing.com/gokarts/v4.30/javascript/iframeResizer.contentWindow.min.js"></script>
+    
+    <script type="text/javascript" src="https://www.apex-timing.com/gokarts/v4.30/javascript/javascript_leaderboards.js?06_04_2023__08_50"></script>
+    <script type="text/javascript" src="https://www.apex-timing.com/gokarts/v4.30/javascript/spin.min.js"></script>
+
+    <script type="text/javascript">
+        var challenge_id = -10; 
+        var leaderboard_id = 8; 
+        var rank_start = 1;
+        var rank_count = 20;
+        var age_min = 0;
+        var age_max = 0;
+        
+        var member_log_name = "";
+        var member_log_id = "";
+        var member_search_id = "";
+    </script>
+
+
+</head>
+
+<body>
+    
+
+    <script type="text/javascript" src="https://www.apex-timing.com/gokarts/v4.30/javascript/javascript_screen_resolution.js?06_04_2023__08_50"></script>
+
+
+<link href="https://www.apex-timing.com/gokarts/media/center328/css/styles_top_bar.css?06_04_2023__08_50" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://www.apex-timing.com/gokarts/v4.30/javascript/javascript_functions.js?06_04_2023__08_50"></script>
+<script type="text/javascript" src="https://www.apex-timing.com/gokarts/v4.30/javascript/javascript_top_bar.js?06_04_2023__08_50"></script>
+<script type="text/javascript">
+    var language = 'IT';
+    var center_id = "328";
+    var member_is_log = false;
+    var PHPSESSID = "1f5bca71e3aaa1f3b944c4cccf7e03b2";
+</script>
+
+
+<header>
+            <div class="button_top_bar" onclick="show_page_link()"><img src="https://media.discordapp.net/attachments/1130197066543550576/1130853957783273472/logo_casco.png?width=546&height=507" alt="button_top_bar" draggable="false"></div>
+        <div class="page_link">
+            <div class="center_logo"><img src="https://media.discordapp.net/attachments/1130197066543550576/1130853957783273472/logo_casco.png?width=546&height=507" onerror="$(this).parent().hide()" onload="hide_a_rank_img()"></div>
+            <script type="text/javascript"> 
+                function hide_a_rank_img(){
+                    try{ 
+                        if(window.parent.location.href == window.location.href){ 
+                            $('header .page_link .link_ranking .a_rank img').hide();
+                            $('header .center_logo, header .center_name').css('display','flex');
+
+                        }else{
+
+                        } 
+                    }catch(e){
+
+                    } 
+                }
+            </script>
+
+            <div class="link_ranking">
+                <!-- <a class="a_before" href="">
+                    <img src="images/before_page.png" alt="before" draggable="false"/>
+                </a> 
+                <div class="separate"></div> -->
+                <a class="a_rank" href="">
+                    <img src="" alt="" draggable="false"/>
+                    <p>FiveM Racing 4 </p>
+                </a>
+            </div>
+
+            <div class="separate"></div>
+            </div>
+        </div>
+
+    
+    
+                <div class="show_login" onclick="show_login()">
+                <img class="padlock" src="https://media.discordapp.net/attachments/1130197066543550576/1130853957783273472/logo_casco.png?width=546&height=507" alt="padlock" draggable="false">
+            </div>
+    </header>  
+
+
+<div class="header_pop_up">
+    <div class="login">
+
+
+        <form class="login_form" onsubmit="login(); return false;">
+            <img class="close_login" onclick="hide_login()" src="https://media.discordapp.net/attachments/1130197066543550576/1130853957783273472/logo_casco.png?width=546&height=507" draggable="false">
+
+            <!-- <label>Nickname o e-mail :</label> -->
+
+            <div class="div_photo">
+                <div>
+                    <div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div_login">
+                <div class="shake">
+                    <div class="div_image">
+                        <img src="https://www.apex-timing.com/gokarts/media/center328/css/user.png">
+                    </div>
+                    <input type="text" onchange="change_login_photo(this)" placeholder="Nickname o e-mail">
+                </div>
+            </div>
+            
+            <!-- <label>Password :</label> -->
+            <div class="div_password">
+                <div class="shake">
+                    <div class="div_image">
+                        <img src="https://www.apex-timing.com/gokarts/media/center328/css/cadenas.png">
+                    </div>
+                   <input type="password" placeholder="Password"> 
+                </div>
+            </div>
+
+            <input type="submit" class="submit" value="Connessione" >
+
+            <p class="forget_password" onclick="show_forgotten_password()">Già registrato o password dimenticata?</p>
+            
+        </form>
+
+
+
+        <form class="forgotten_password_form" onsubmit="forgotten_password(); return false;">
+            <img class="close_login" onclick="hide_login()" src="https://www.apex-timing.com/gokarts/media/center328/css/cancel.png" draggable="false">
+
+            <div class="div_photo">
+                <div>
+                    <div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="send_new_password">
+                <!-- <p>Richiedi nuova password :</p> -->
+                <p class="new_password_info">Se ti sei registrato in pista o sul web con un indirizzo email valido, o se hai dimenticato la password, richiedi una nuova password :</p>
+                <!-- <label>L&#039;email di registrazione :</label> -->
+
+                <div class="div_email">
+                    <div class="shake">
+                        <div class="div_image">
+                            <img src="https://www.apex-timing.com/gokarts/media/center328/css/email.png">
+                        </div>
+                        <input type="email" placeholder="Indirizzo Email">
+                    </div>
+                </div>
+
+
+                <input type="submit" class="submit" value="Convalida">
+                <p class="forget_password" onclick="show_check_login_card_member()">Mi sono registrato senza indicare la mia e-mail?</p>
+                
+            </div>
+            <div class="new_password_sending">
+                <p>Una nuova password è stata inviata all&#039;indirizzo :</p>
+                <p class="email"></p>
+            </div>
+        </form>
+
+
+
+        <form class="check_card_member_form" onsubmit="check_login_card_member(); return false;">
+            <img class="close_login" onclick="hide_login()" src="https://www.apex-timing.com/gokarts/media/center328/css/cancel.png" draggable="false">
+
+            <div class="div_photo">
+                <div>
+                    <div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <p>Accesso senza email alla registrazione</p>
+            
+            <!-- <label>Numero di tessera :</label> -->
+            <div class="div_card">
+                <div class="shake">
+                    <div class="div_image">
+                        <img src="https://www.apex-timing.com/gokarts/media/center328/css/card_member_2.png">
+                    </div>
+                    <input type="tel" placeholder="Numero di tessera"> 
+                </div>
+            </div>
+            
+            <input type="submit" class="submit" value="Connessione" >
+        </form>
+
+
+
+        <form class="card_member_form" onsubmit="login_card_member(); return false;">
+            <img class="close_login" onclick="hide_login()" src="https://www.apex-timing.com/gokarts/media/center328/css/cancel.png" draggable="false">
+
+            <div class="div_photo">
+                <div>
+                    <div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <p>Per accedere, imposta una mail e una password di accesso</p>
+
+            <!-- <label>E-mail :</label> -->
+            <div class="div_new_email">
+                <div class="shake">
+                    <div class="div_image">
+                        <img src="https://www.apex-timing.com/gokarts/media/center328/css/email.png">
+                    </div>
+                    <input type="text" name="email" placeholder="E-mail">
+                </div>
+            </div>
+
+            <!-- <label>Password :</label> -->
+            <div class="div_new_password">
+                <div class="shake">
+                    <div class="div_image">
+                        <img src="https://www.apex-timing.com/gokarts/media/center328/css/cadenas.png">
+                    </div>
+                    <input type="password" name="password" placeholder="Nuovo password">
+                </div>
+            </div> 
+
+            <!-- <label>Conferma password :</label> -->
+            <div class="div_confirm_password">
+                <div class="shake">
+                    <div class="div_image">
+                        <img src="https://www.apex-timing.com/gokarts/media/center328/css/cadenas.png">
+                    </div>
+                    <input type="password" name="confirm_password" placeholder="Conferma password">
+                </div>
+            </div> 
+            
+            <input type="submit" class="submit" value="Convalida" >
+        </form>
+
+    </div>
+</div>
+        <div class="body">
+ <!-- id=number_result -> pour afficher le nombre de résultat -> utiliser par le javascript pour calculer la position du dernier resultat  -->
+                                    
+                               </div>
+                         </div>
+                            <!-- 
+                                <div>
+                                    <img id="fiends_icon" onclick="change_icon(this,'#world_icon'),Top_Results()" class="friends" src="images/friends.png" alt="" />
+                                    <img id="world_icon" onclick="change_icon(this,'#fiends_icon'),Top_Results()" class="world" src="images/world.png" alt="" />
+                                </div> 
+                            -->
+                         </div>
+                     </div>
+                  </div>
+                    <div id="results">
+                        <table class="results_table" data-resultNumber="1000">
+	                            <thead>
+	                                <tr><th class="rank">Cla</th>
+						<th class="triangle_1"><div></div></th><th class="pseudo">Nickname</th><th class="triangle_2"><div></div></th>
+	                    <th class="time" colspan="2">Punti</th>        </tr>
+	                            </thead>
+	                           	<tbody><tr data-member_id="3753" data-is_member="1" data-sex="1" data-rank="1" data-status="5"><td class="rank">1</td>
+						<td class="triangle_1"></td><td class="pseudo">Andregold / Mercedes-AMG Petronas F1 Team</td><td class="triangle_2"></td>
+	                     <td class="time">0</td>
+	                     <td class="triangle_3" data-icon=""></td></tr><tr data-member_id="43277" data-is_member="1" data-sex="0" data-rank="2" data-status="5"><td class="rank">2</td>
+						<td class="triangle_1"></td><td class="pseudo">Brosky /  Porsche 911 E-HYBRID F1 Racing</td><td class="triangle_2"></td>
+	                     <td class="time">0</td>
+	                     <td class="triangle_3" data-icon=""></td></tr><tr data-member_id="892" data-is_member="1" data-sex="0" data-rank="3" data-status="5"><td class="rank">3</td>
+						<td class="triangle_1"></td><td class="pseudo">Chri._ / KRS Williams Racing F1</td><td class="triangle_2"></td>
+	                     <td class="time">0</td>
+	                     <td class="triangle_3" data-icon=""></td></tr><tr data-member_id="42418" data-is_member="1" data-sex="0" data-rank="4" data-status="5"><td class="rank">4</td>
+						<td class="triangle_1"></td><td class="pseudo">Cuore / Scuderia Ferrari F1 Team</td><td class="triangle_2"></td>
+	                     <td class="time">0</td>
+	                     <td class="triangle_3" data-icon=""></td></tr><tr data-member_id="2311" data-is_member="1" data-sex="0" data-rank="5" data-status="5"><td class="rank">5</td>
+						<td class="triangle_1"></td><td class="pseudo">Cebunta / BWT Alpine F1 Racing Team</td><td class="triangle_2"></td>
+	                     <td class="time">0</td>
+	                     <td class="triangle_3" data-icon=""></td></tr><tr data-member_id="41855" data-is_member="1" data-sex="0" data-rank="6" data-status="5"><td class="rank">6</td>
+						<td class="triangle_1"></td><td class="pseudo">Cofee387 / McLaren F1 Team Racing</td><td class="triangle_2"></td>
+	                     <td class="time">0</td>
+	                     <td class="triangle_3" data-icon=""></td></tr><tr data-member_id="2310" data-is_member="1" data-sex="1" data-rank="7" data-status="5"><td class="rank">7</td>
+						<td class="triangle_1"></td><td class="pseudo">Davide / Aston Martin Aramco Cognizant F1 Team</td><td class="triangle_2"></td>
+	                     <td class="time">0</td>
+	                     <td class="triangle_3" data-icon=""></td></tr><tr data-member_id="32191" data-is_member="1" data-sex="0" data-rank="8" data-status="5"><td class="rank">8</td>
+						<td class="triangle_1"></td><td class="pseudo">Emmanu / Mercedes-AMG Petronas F1 Team</td><td class="triangle_2"></td>
+	                     <td class="time">0</td>
+	                     <td class="triangle_3" data-icon=""></td></tr><tr data-member_id="1953" data-is_member="1" data-sex="1" data-rank="9" data-status="5"><td class="rank">9</td>
+						<td class="triangle_1"></td><td class="pseudo">Fixx / Prada Pagani Zonda F1 Team</td><td class="triangle_2"></td>
+	                     <td class="time">0</td>
+	                     <td class="triangle_3" data-icon=""></td></tr><tr data-member_id="31518" data-is_member="1" data-sex="1" data-rank="10" data-status="5"><td class="rank">10</td>
+						<td class="triangle_1"></td><td class="pseudo">Flaviob29 / Porsche 911 E-HYBRID F1 Racing</td><td class="triangle_2"></td>
+	                     <td class="time">0</td>
+	                     <td class="triangle_3" data-icon=""></td></tr><tr data-member_id="43278" data-is_member="1" data-sex="0" data-rank="11" data-status="5"><td class="rank">11</td>
+						<td class="triangle_1"></td><td class="pseudo">Karos / KRS Williams Racing F1</td><td class="triangle_2"></td>
+	                     <td class="time">0</td>
+	                     <td class="triangle_3" data-icon=""></td></tr><tr data-member_id="48099" data-is_member="1" data-sex="1" data-rank="12" data-status="5"><td class="rank">12</td>
+						<td class="triangle_1"></td><td class="pseudo">Paky1926 / Lamborghini SVJ ENI Squadra Corse F1</td><td class="triangle_2"></td>
+	                     <td class="time">0</td>
+	                     <td class="triangle_3" data-icon=""></td></tr><tr data-member_id="54112" data-is_member="1" data-sex="1" data-rank="13" data-status="5"><td class="rank">13</td>
+						<td class="triangle_1"></td><td class="pseudo">Savage / Lamborghini SVJ ENI Squadra Corse F1</td><td class="triangle_2"></td>
+	                     <td class="time">0</td>
+	                     <td class="triangle_3" data-icon=""></td></tr><tr data-member_id="32188" data-is_member="1" data-sex="1" data-rank="14" data-status="5"><td class="rank">14</td>
+						<td class="triangle_1"></td><td class="pseudo">ℜiky / Lamborghini SVJ ENI Squadra Corse F1</td><td class="triangle_2"></td>
+	                     <td class="time">0</td>
+	                     <td class="triangle_3" data-icon=""></td></tr><tr data-member_id="53398" data-is_member="1" data-sex="0" data-rank="15" data-status="5"><td class="rank">15</td>
+						<td class="triangle_1"></td><td class="pseudo">Miccel / Scuderia Ferrari F1 Team</td><td class="triangle_2"></td>
+	                     <td class="time">0</td>
+	                     <td class="triangle_3" data-icon=""></td></tr><tr data-member_id="53397" data-is_member="1" data-sex="1" data-rank="16" data-status="5"><td class="rank">16</td>
+						<td class="triangle_1"></td><td class="pseudo">iTzManu11 / Scuderia Ferrari F1 Team</td><td class="triangle_2"></td>
+	                     <td class="time">0</td>
+	                     <td class="triangle_3" data-icon=""></td></tr><tr data-member_id="1113" data-is_member="1" data-sex="1" data-rank="17" data-status="5"><td class="rank">17</td>
+						<td class="triangle_1"></td><td class="pseudo">Ak4_simozz_ / McLaren F1 Team Racing</td><td class="triangle_2"></td>
+	                     <td class="time">0</td>
+	                     <td class="triangle_3" data-icon=""></td></tr><tr data-member_id="34009" data-is_member="1" data-sex="0" data-rank="18" data-status="5"><td class="rank">18</td>
+						<td class="triangle_1"></td><td class="pseudo">!Jaco / Aston Martin Aramco Cognizant F1 Team</td><td class="triangle_2"></td>
+	                     <td class="time">0</td>
+                        </tbody>
+							 </table>
+
+                        
+                    </div>
+
+
+                    <div class="div_load_time">
+                        <div class="load_time" id="load_time" style="display:none">
+                        </div>
+                    </div>
+
+
+              </div>
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+      <a class="apex_link" title="FiveM Racing 4" href="" target="_blank">FiveM Racing 4 © </a>
+</body>
+
+
+
+<!-- Mirrored from www.apex-timing.com/gokarts/results.php?center=328&leaderboard=8 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Jul 2023 20:07:05 GMT -->
+</html>
+
+
